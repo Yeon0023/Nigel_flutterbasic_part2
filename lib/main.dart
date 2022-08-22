@@ -12,18 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Container(
-            width: 300,
-            height: 300,
-            color: Colors.deepOrange,
-            child: ClipOval(
-              child: Image.network(
-                'https://img.icons8.com/ios/200/000000/flutter.png',
-                fit: BoxFit.scaleDown,
-                color: Colors.blue[300],
-              ),
-            ),
-          ),
+          child: Container(),
         ),
       ),
     );
