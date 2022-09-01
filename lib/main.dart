@@ -7,8 +7,22 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(),
+    return MaterialApp(
+      home: Scaffold(
+          body: SafeArea(
+        child: Center(
+          child: Container(
+            width: 300,
+            height: 300,
+            decoration: BoxDecoration(
+              color: Colors.amber,
+              border: Border.all(
+                width: 5,
+              ),
+            ),
+          ),
+        ),
+      )),
     );
   }
 }
